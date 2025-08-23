@@ -11,16 +11,8 @@ declare global {
   }
 }
 
-const url =
-  (typeof window !== 'undefined' && window.__SUPABASE_URL__) ||
-  (typeof window !== 'undefined' && localStorage.getItem('supabaseUrl')) ||
-  // import.meta.env is not guaranteed, but keep as a final fallback
-  (import.meta as any).env?.VITE_SUPABASE_URL;
-
-const anonKey =
-  (typeof window !== 'undefined' && window.__SUPABASE_ANON_KEY__) ||
-  (typeof window !== 'undefined' && localStorage.getItem('supabaseAnonKey')) ||
-  (import.meta as any).env?.VITE_SUPABASE_ANON_KEY;
+const url = 'https://ybhbxhfyqlbmpuxwyndk.supabase.co';
+const anonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InliaGJ4aGZ5cWxibXB1eHd5bmRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU5ODIwMjIsImV4cCI6MjA3MTU1ODAyMn0.gKovC5xX4orihE8UdH44HNl1RfRSoyVtaLZJPKygM9Y';
 
 function createMockClient(): SupabaseClient {
   if (typeof window !== 'undefined') {
