@@ -138,6 +138,12 @@ export default function Dashboard() {
                   Add Medication
                 </Button>
               </Link>
+              <Link to="/calendar">
+                <Button variant="outline" size="sm">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Calendar
+                </Button>
+              </Link>
               <Link to="/settings">
                 <Button variant="outline" size="sm">
                   <Settings className="w-4 h-4" />
