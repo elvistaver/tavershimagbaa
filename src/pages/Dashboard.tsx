@@ -132,16 +132,10 @@ export default function Dashboard() {
               <h1 className="text-xl font-semibold">MedTracker</h1>
             </div>
             <div className="flex items-center space-x-4">
-              <Link to="/medications">
+              <Link to="/add-medication">
                 <Button variant="outline" size="sm">
                   <Plus className="w-4 h-4 mr-2" />
                   Add Medication
-                </Button>
-              </Link>
-              <Link to="/calendar">
-                <Button variant="outline" size="sm">
-                  <Calendar className="w-4 h-4 mr-2" />
-                  Calendar
                 </Button>
               </Link>
               <Link to="/settings">
@@ -256,7 +250,7 @@ export default function Dashboard() {
                 <div className="text-center py-8 text-muted-foreground">
                   <Pill className="w-12 h-12 mx-auto mb-4 opacity-50" />
                   <p>No medications scheduled for today.</p>
-                  <Link to="/medications">
+                  <Link to="/add-medication">
                     <Button className="mt-4">
                       <Plus className="w-4 h-4 mr-2" />
                       Add your first medication
